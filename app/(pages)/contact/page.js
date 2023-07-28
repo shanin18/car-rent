@@ -1,15 +1,15 @@
-import Footer from "@/app/components/common/Footer";
 import DefaultHeader from "../../components/common/DefaultHeader";
 import HeaderSidebar from "../../components/common/HeaderSidebar";
-import HeaderTop from "../../components/common/HeaderTop";
 import MobileMenu from "../../components/common/MobileMenu";
 import LoginSignupModal from "@/app/components/common/login-signup";
 import Map from "@/app/components/common/Map";
+import Footer from "@/app/components/home-2/Footer";
 import Address from "@/app/components/pages/contact/Address";
 import Form from "@/app/components/pages/contact/Form";
 
 export const metadata = {
-  title: "Contact || Voiture - Automotive & Car Dealer NextJS Template",
+  title: "Contact Us || Niljyoti",
+  description: `Niljyoti - Car rent service provider.`,
 };
 
 const Contact = () => {
@@ -24,10 +24,6 @@ const Contact = () => {
         <HeaderSidebar />
       </div>
       {/* Sidebar Panel End */}
-
-      {/* header top */}
-      <HeaderTop />
-      {/* End header top */}
 
       {/* Main Header Nav */}
       <DefaultHeader />

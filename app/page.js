@@ -1,15 +1,15 @@
-import Home_1 from "./(home)/home-1/page";
+import Home_2 from "./home-2/page";
 import Wrapper from "./layout/wrapper";
 
 export const metadata = {
-  title: "Home || Voiture - Automotive & Car Dealer NextJS Template",
-  description: `Voiture - Automotive & Car Dealer NextJS Template. `,
+  title: "Home || Niljyoti",
+  description: `Niljyoti - Car rent service provider.`,
 };
 
 export default function MainRoot() {
   return (
     <Wrapper>
-      <Home_1 />
+      <Home_2 />
     </Wrapper>
   );
 }

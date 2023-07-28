@@ -3,6 +3,8 @@ import MainMenu from "./MainMenu";
 import Image from "next/image";
 
 const DefaultHeader = () => {
+  const user = false;
+
   return (
     <header className="header-nav menu_style_home_one home3_style main-menu">
       {/* Ace Responsive Menu */}
@@ -16,22 +18,16 @@ const DefaultHeader = () => {
               <span className="icon-bar" />
             </button>
           </div>
-          <Link href="/" className="navbar_brand float-start dn-md">
+          <Link href="/" className="navbar_brand float-start dn-md pt10 pb10">
             <Image
-              width={140}
+              width={130}
               height={45}
               className="logo1 img-fluid"
-              src="/images/header-logo2.svg"
-              alt="header-logo.svg"
-            />
-            <Image
-              width={140}
-              height={45}
-              className="logo2 img-fluid"
-              src="/images/header-logo2.svg"
-              alt="header-logo2.svg"
+              src="https://i.ibb.co/gDjMYp3/logo-2.png"
+              alt="logo"
             />
           </Link>
+
           {/* Responsive Menu Structure*/}
           <ul
             // id="respMenu"
@@ -39,20 +35,11 @@ const DefaultHeader = () => {
             data-menu-style="horizontal"
           >
             <MainMenu />
-            <li className="add_listing">
-              <Link href="/add-listings">+ Add Listing</Link>
-            </li>
-            <li
-              className="sidebar_panel"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <a className="sidebar_switch pt0" role="button">
-                Contact
-                {/* <span /> */}
-              </a>
-            </li>
+            {user && (
+              <li className="add_listing">
+                <Link href="/add-listings">+ Add Listing</Link>
+              </li>
+            )}
           </ul>
         </div>
       </nav>

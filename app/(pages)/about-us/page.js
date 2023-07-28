@@ -1,7 +1,5 @@
-import Footer from "@/app/components/common/Footer";
 import DefaultHeader from "../../components/common/DefaultHeader";
 import HeaderSidebar from "../../components/common/HeaderSidebar";
-import HeaderTop from "../../components/common/HeaderTop";
 import MobileMenu from "../../components/common/MobileMenu";
 import AboutTextBlock from "@/app/components/pages/about-us/AboutTextBlock";
 import WhyChoose from "@/app/components/common/WhyChoose";
@@ -9,9 +7,11 @@ import Team from "@/app/components/common/Team";
 import Testimonial from "@/app/components/common/Testimonial";
 import Partner from "@/app/components/common/Partner";
 import LoginSignupModal from "@/app/components/common/login-signup";
+import Footer from "@/app/components/home-2/Footer";
 
 export const metadata = {
-  title: "About Us || Voiture - Automotive & Car Dealer NextJS Template",
+  title: "About Us || Niljyoti",
+  description: `Niljyoti - Car rent service provider.`,
 };
 
 const AboutUs = () => {
@@ -26,10 +26,6 @@ const AboutUs = () => {
         <HeaderSidebar />
       </div>
       {/* Sidebar Panel End */}
-
-      {/* header top */}
-      <HeaderTop />
-      {/* End header top */}
 
       {/* Main Header Nav */}
       <DefaultHeader />
@@ -46,7 +42,6 @@ const AboutUs = () => {
             <div className="col-xl-12">
               <div className="breadcrumb_content">
                 <h2 className="breadcrumb_title">About Us</h2>
-                <p className="subtitle">About Us</p>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
                     <a href="#">Home</a>
@@ -90,6 +85,7 @@ const AboutUs = () => {
       {/* End Why Chose Us */}
 
       {/* Our Team */}
+
       <section className="our-team pb90 pt0">
         <div className="container">
           <div className="row">
@@ -118,6 +114,7 @@ const AboutUs = () => {
         </div>
         {/* End .container */}
       </section>
+
       {/* End Our Team */}
 
       {/* Testimonials  */}

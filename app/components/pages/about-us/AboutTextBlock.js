@@ -11,7 +11,7 @@ const AboutTextBlock = () => {
             priority
             style={{ objectFit: "cover" }}
             className="thumb1"
-            src="/images/about/1.jpg"
+            src="/images/about/1.webp"
             alt="1.jpg"
           />
           <Image
@@ -20,7 +20,7 @@ const AboutTextBlock = () => {
             priority
             style={{ objectFit: "cover" }}
             className="img-fluid thumb2"
-            src="/images/about/2.jpg"
+            src="/images/about/2.webp"
             alt="2.jpg"
           />
         </div>
@@ -28,7 +28,7 @@ const AboutTextBlock = () => {
       {/* End .col */}
       <div className="col-lg-5 offset-lg-1">
         <div className="about_content">
-          <h2 className="title">Welcome To The Voiture</h2>
+          <h2 className="title">Welcome To The Niljyoti</h2>
           <p className="mb30">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque

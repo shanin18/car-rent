@@ -3,11 +3,11 @@ const Address = () => {
     title: "Contact Details",
     address: (
       <>
-        Germany — <br /> 329 Queensberry Street,
-        <br /> North Melbourne VIC 3051
+        India — <br /> 93, A.K. Road, Agartala, India,
+        <br /> Tripura
       </>
     ),
-    subtitle: "+1 670 936 46 70",
+    subtitle: "094364 56088",
     email: "hello@voiture.com",
     socialIcons: [
       { iconClass: "fab fa-facebook-f", link: "#" },
@@ -25,9 +25,6 @@ const Address = () => {
         <h4 className="subtitle">
           <a href={`tel:${addressData.subtitle}`}>{addressData.subtitle}</a>
         </h4>
-        <p>
-          <a href={`mailto:${addressData.email}`}>{addressData.email}</a>
-        </p>
         <div className="footer_social_widget">
           <ul className="mb0">
             {addressData.socialIcons.map((icon, index) => (

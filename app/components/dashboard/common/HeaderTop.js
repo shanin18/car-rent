@@ -4,14 +4,14 @@ const HeaderTop = () => {
       icon: "fab fa-facebook-f",
       link: "#",
     },
-    {
-      icon: "fab fa-twitter",
-      link: "#",
-    },
-    {
-      icon: "fab fa-instagram",
-      link: "#",
-    },
+    // {
+    //   icon: "fab fa-twitter",
+    //   link: "#",
+    // },
+    // {
+    //   icon: "fab fa-instagram",
+    //   link: "#",
+    // },
     {
       icon: "fab fa-linkedin",
       link: "#",
@@ -21,16 +21,13 @@ const HeaderTop = () => {
   const contactData = [
     {
       icon: "flaticon-phone-call",
-      text: "1-800-458-56987",
+      text: "094364 56088",
     },
     {
       icon: "flaticon-map",
-      text: "47 Bakery Street, London, UK",
+      text: "93, A.K. Road, Agartala, India, Tripura",
     },
-    {
-      icon: "flaticon-clock",
-      text: "Mon - Fri 8:00 - 18:00",
-    },
+    
   ];
 
   return (

@@ -14,9 +14,9 @@ const Footer = () => {
                 <Image
                   width={140}
                   height={45}
-                  className="logo2 img-fluid"
-                  src="/images/header-logo.svg"
-                  alt="header-logo.png"
+                  className="logo1 img-fluid"
+                  src="https://i.ibb.co/gDjMYp3/logo-2.png"
+                  alt="logo"
                 />
               </div>
             </div>

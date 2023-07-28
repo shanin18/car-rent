@@ -9,31 +9,31 @@ const teamMembers = [
     id: 1,
     name: "Dianne Russell",
     title: "Dog Trainer",
-    imageSrc: "/images/team/1.jpg",
+    imageSrc: "/images/team/1.webp",
   },
   {
     id: 2,
     name: "Devon Lane",
     title: "Nursing Assistant",
-    imageSrc: "/images/team/2.jpg",
+    imageSrc: "/images/team/2.webp",
   },
   {
     id: 3,
     name: "Ralph Edwards",
     title: "President of Sales",
-    imageSrc: "/images/team/3.jpg",
+    imageSrc: "/images/team/3.webp",
   },
   {
     id: 4,
     name: "Esther Howard",
     title: "Marketing Coordinator",
-    imageSrc: "/images/team/4.jpg",
+    imageSrc: "/images/team/4.webp",
   },
   {
     id: 5,
     name: "Dianne Russell",
     title: "Dog Trainer",
-    imageSrc: "/images/team/1.jpg",
+    imageSrc: "/images/team/5.webp",
   },
 ];
 
@@ -89,7 +89,6 @@ const Team = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
       <div className="slider-arrow-center">
         <button className="prev team-arrow-prev">
           <i className="flaticon-left-arrow"></i>

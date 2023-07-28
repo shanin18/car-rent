@@ -868,7 +868,7 @@ address {
 .header_top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: inline-block;
-  padding: 10px 0;
+  padding: 8px 0;
   position: relative;
   z-index: 2;
   width: 100%;
@@ -1347,6 +1347,7 @@ form.form-inline.mailchimp_form {
 .ht_right_widget ul li a,
 .home3_header_top_contact li a {
 }
+
 .ht_left_widget.home3 .cd-dropdown-trigger,
 .ht_left_widget.home3 .no-touch .cd-dropdown-trigger.dropdown-is-active:hover,
 .ht_left_widget.home3 .no-touch .cd-dropdown-trigger:hover {
@@ -8515,7 +8516,8 @@ form.listing_page_v9 {
 }
 /*== Inner Pages Breadcrumb ==*/
 .inner_page_breadcrumb {
-  background-image: url(../images/background/inner-pagebg.jpg);
+  background-image: url(../images/background/about.webp);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 90px 0;
@@ -10261,6 +10263,12 @@ a.btn_error {
   letter-spacing: 0em;
   margin: 12px;
 }
+.mobile-list{
+  display: flex;
+  flex-direction:column;
+  gap:10px
+}
+
 .pricing_table_switch_slide {
   border: 1px solid #e7e7ec;
   position: absolute;
@@ -16729,6 +16737,11 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
   padding: 0;
 }
 
+.warning{
+  display: flex;
+  align-items: center;
+}
+
 .p0 {
   padding: 0 !important;
 }
@@ -17948,7 +17961,9 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
 }
 /*== BackGround Images ==*/
 .bg-img1 {
+  background-color: rgba(0, 0, 0, 0.7); 
   background-image: url(../images/background/banner2.jpg);
+  background-blend-mode:multiply;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -18011,8 +18026,15 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
   background-position: center;
   background-repeat: no-repeat;
 }
+.salesbanner{
+  background-image: url(../images/home/salesbanner.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
 .bg-home1 {
-  background-image: url(../images/home/banner.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-image: url(../images/home/banner3.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
