@@ -85,7 +85,7 @@ body.body_overlay:before {
   transform: translate(330px, 0);
 }
 .body_home2_style {
-  padding: 0 60px 60px 60px;
+  padding: 0px 60px 60px 60px;
 }
 .body_home2_style section {
   border-radius: 16px;
@@ -365,6 +365,20 @@ address {
 .z99 {
   z-index: 99;
 }
+
+.fixed{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index:1000;
+}
+
+.shadow{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .social_icons li {
   background-color: transparent;
   border-radius: 3px;
@@ -1592,9 +1606,9 @@ header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed li a {
 }
 header.header-nav.menu_style_home_one .ace-responsive-menu li a {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 16px;
   letter-spacing: 0em;
 }
@@ -11686,7 +11700,7 @@ legend span {
 }
 .mbp_pagination ul.page_navigation li.active .page-link {
   background-color: var(--primary-color);
-  color: #1a3760;
+  color: #ffffff;
 }
 .mbp_pagination .new_line_pagination {
   position: relative;
@@ -15629,7 +15643,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
 }
 .form_grid .contact_form button {
   border-radius: 8px;
-  color: #1a3760;
+  color: #ffffff;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -16148,7 +16162,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: 8px;
-  color: #1a3760;
+  color: #ffffff;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -16163,9 +16177,9 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
 .btn-thm:hover,
 .btn-thm:active,
 .btn-thm:focus {
-  background-color: #e6aa1b;
-  border-color: #e6aa1b;
-  color: #1a3760;
+  background-color: #1a3760;
+  border-color: #1a3760;
+  color: #ffffff;
 }
 
 .btn-thm.white:hover,
@@ -23422,7 +23436,7 @@ input.quantity-num[type="number"]::-webkit-outer-spin-button {
 }
 .car-listing:hover .details .title,
 .car-listing:hover .details .title a {
-  color: #1947e2;
+  color: var(--primary-color);
 }
 .car-listing .details .listing_footer {
   border-top: 1px solid #eaeaea;
@@ -23614,7 +23628,7 @@ input.quantity-num[type="number"]::-webkit-outer-spin-button {
   letter-spacing: 0em;
 }
 .listign_review ul li a i {
-  color: var(--primary-color);
+  color: #febe42;
   font-size: 10px;
 }
 .listing_footer ul li.list-inline-item {
@@ -23664,6 +23678,11 @@ input.quantity-num[type="number"]::-webkit-outer-spin-button {
   line-height: 13px;
   letter-spacing: 0em;
 }
+
+.shadow2 {
+  box-shadow: 2px 2px 6px rgba(120, 160, 200, 0.2);
+}
+
 .car-listing .thmb_cntnt2 li a span {
   font-size: 14px;
   font-weight: normal;
@@ -23820,11 +23839,11 @@ input.quantity-num[type="number"]::-webkit-outer-spin-button {
   margin-bottom: 0;
 }
 .more_listing .icon {
-  color: #1a3760;
+  color: #fff;
 }
 .more_listing .icon:hover {
   background-color: #1a3760;
-  color: #fff;
+  
 }
 /*== Why Choose Us ==*/
 .why_chose_us {

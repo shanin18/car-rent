@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import "../public/scss/main.scss";
 import ScrollToTop from "./components/common/ScrollTop";
 import styled from "styled-components";
+import DefaultHeader from "./components/common/DefaultHeader";
 
 if (typeof window !== "undefined") {
   import("bootstrap");
@@ -30,6 +31,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Body cz-shortcut-listen="false">
+        <div className="pb100">
+        </div>
         {children}
         <ScrollToTop />
       </Body>

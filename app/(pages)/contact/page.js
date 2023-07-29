@@ -1,9 +1,8 @@
 import DefaultHeader from "../../components/common/DefaultHeader";
-import HeaderSidebar from "../../components/common/HeaderSidebar";
 import MobileMenu from "../../components/common/MobileMenu";
 import LoginSignupModal from "@/app/components/common/login-signup";
 import Map from "@/app/components/common/Map";
-import Footer from "@/app/components/home-2/Footer";
+import Footer from "@/app/components/Footer";
 import Address from "@/app/components/pages/contact/Address";
 import Form from "@/app/components/pages/contact/Form";
 
@@ -15,15 +14,6 @@ export const metadata = {
 const Contact = () => {
   return (
     <div className="wrapper">
-      <div
-        className="offcanvas offcanvas-end"
-        tabIndex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <HeaderSidebar />
-      </div>
-      {/* Sidebar Panel End */}
 
       {/* Main Header Nav */}
       <DefaultHeader />
@@ -36,14 +26,11 @@ const Contact = () => {
       {/* <!-- Our Contact --> */}
       <section className="our-contact p0 mt0 mt70-992">
         <div className="container-fluid p0">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="h600 map_in">
-                <Map />
+          <div className="h600 map_in">
+              <Map />
               </div>
-            </div>
-          </div>
-        </div>
+         </div>
+        {/* </div> */}
       </section>
       {/* <!-- End Our Contact --> */}
 

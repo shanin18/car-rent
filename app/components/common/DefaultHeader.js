@@ -1,12 +1,30 @@
+"use client";
 import Link from "next/link";
 import MainMenu from "./MainMenu";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const DefaultHeader = () => {
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 102) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   const user = false;
 
   return (
-    <header className="header-nav menu_style_home_one home3_style main-menu">
+    <header
+      className={`header-nav menu_style_home_one home3_style main-menu fixed ${shadow && "shadow"}`}
+    >
       {/* Ace Responsive Menu */}
       <nav>
         <div className="container posr">

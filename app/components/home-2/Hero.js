@@ -8,33 +8,42 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
+  // const carSlides = [
+  //   {
+  //     image: "/images/home/WagonR.webp",
+  //     title: "Waygonr",
+  //     price: 800,
+  //   },
+  //   {
+  //     image: "/images/home/dzire.webp",
+  //     title: "Dzire",
+  //     price: 1000,
+  //   },
+  //   {
+  //     image: "/images/home/Skorpio.webp",
+  //     title: "Scorpio",
+  //     price: 1300,
+  //   },
+  //   {
+  //     image: "/images/home/ertiga.webp",
+  //     title: "Ertiga",
+  //     price: 1200,
+  //   },
+  //   {
+  //     image: "/images/home/innova.webp",
+  //     title: "Innova",
+  //     price: 1800,
+  //   },
+  // ];
+
   const carSlides = [
     {
-      image: "/images/home/WagonR.webp",
-      title: "Waygonr",
-      price: 800,
+      image: "/images/background/banner.jpg"
     },
     {
-      image: "/images/home/dzire.webp",
-      title: "Dzire",
-      price: 1000,
-    },
-    {
-      image: "/images/home/Skorpio.webp",
-      title: "Scorpio",
-      price: 1300,
-    },
-    {
-      image: "/images/home/ertiga.webp",
-      title: "Ertiga",
-      price: 1200,
-    },
-    {
-      image: "/images/home/innova.webp",
-      title: "Innova",
-      price: 1800,
-    },
-  ];
+      image: "/images/background/banner2.jpg"
+    }
+  ]
 
   return (
     <div className="main-banner-wrapper home2_main_slider mb30-md">
@@ -60,7 +69,7 @@ const Hero = () => {
                   backgroundBlendMode:"multiply"
                 }}
               >
-                <div className="container">
+                {/* <div className="container">
                   <div className="row home-content-home2-style">
                     <div className="col-lg-12 p0">
                       <h2 className="banner-title">
@@ -93,7 +102,7 @@ const Hero = () => {
                       </Link>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
           ))}

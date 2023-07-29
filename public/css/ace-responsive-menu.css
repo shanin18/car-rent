@@ -9,7 +9,7 @@ E-mail: samson3d@gmail.com
 /* Ace Responsive Menu
 ----------------------------------------*/
 a {
-    color: #0d638f;
+    color: var(--primary-color);
     text-shadow: none;
 }
 ul {
@@ -39,7 +39,8 @@ ul {
     color: #c0c0c0;
 }
 .ace-responsive-menu > li > a.active span {
-    color: #f5c34b;
+
+    color: #09adf2;
 }
 .ace-responsive-menu > li > a {
     display: block;

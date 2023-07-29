@@ -35,7 +35,7 @@ const WhyChoose = () => {
           data-aos-delay={reason.delay}
           key={index}
         >
-          <div className="why_chose_us home7_style">
+          <div className="why_chose_us home7_style  shadow2">
             <div className={`icon ${reason.style}`}>
               <span className={reason.iconClass} />
             </div>

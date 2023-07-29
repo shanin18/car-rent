@@ -5,9 +5,8 @@ import AboutTextBlock from "@/app/components/pages/about-us/AboutTextBlock";
 import WhyChoose from "@/app/components/common/WhyChoose";
 import Team from "@/app/components/common/Team";
 import Testimonial from "@/app/components/common/Testimonial";
-import Partner from "@/app/components/common/Partner";
 import LoginSignupModal from "@/app/components/common/login-signup";
-import Footer from "@/app/components/home-2/Footer";
+import Footer from "@/app/components/Footer";
 
 export const metadata = {
   title: "About Us || Niljyoti",
@@ -137,28 +136,6 @@ const AboutUs = () => {
         </div>
       </section>
       {/* End Testimonials  */}
-
-      {/* Our Partners */}
-      <section className="our-partner pb100">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Popular Makes</h2>
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <div className="partner_divider">
-            <div className="row">
-              <Partner />
-            </div>
-            {/* End .row */}
-          </div>
-        </div>
-      </section>
-      {/* End  Our Partners */}
 
       {/* Our Footer */}
       <Footer />

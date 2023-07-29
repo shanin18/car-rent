@@ -1,7 +1,6 @@
-import Footer from "@/app/components/common/Footer";
+
 import DefaultHeader from "@/app/components/common/DefaultHeader";
 import HeaderSidebar from "@/app/components/common/HeaderSidebar";
-import HeaderTop from "@/app/components/common/HeaderTop";
 import MobileMenu from "@/app/components/common/MobileMenu";
 import LoginSignupModal from "@/app/components/common/login-signup";
 import BreadCrumb from "@/app/components/listing/listing-single/BreadCrumb";
@@ -17,10 +16,11 @@ import ContactSeller from "@/app/components/listing/listing-single/sidebar/Conta
 import SellerDetail from "@/app/components/listing/listing-single/sidebar/SellerDetail";
 import Link from "next/link";
 import ReleatedCar from "@/app/components/listing/listing-single/ReleatedCar";
+import Footer from "@/app/components/home-2/Footer";
 
 export const metadata = {
   title:
-    "Listing Single V1 || Voiture - Automotive & Car Dealer NextJS Template",
+    "Details || Voiture - Automotive & Car Dealer NextJS Template",
 };
 
 const ListingSingleV1 = () => {
@@ -35,10 +35,6 @@ const ListingSingleV1 = () => {
         <HeaderSidebar />
       </div>
       {/* Sidebar Panel End */}
-
-      {/* header top */}
-      <HeaderTop />
-      {/* End header top */}
 
       {/* Main Header Nav */}
       <DefaultHeader />

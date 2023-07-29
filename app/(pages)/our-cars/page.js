@@ -1,13 +1,12 @@
 
 import DefaultHeader from "@/app/components/common/DefaultHeader";
-import HeaderSidebar from "@/app/components/common/HeaderSidebar";
 import MobileMenu from "@/app/components/common/MobileMenu";
 import LoginSignupModal from "@/app/components/common/login-signup";
 import AdvanceFilter from "@/app/components/listing/advance-filter";
 import Pagination from "@/app/components/common/Pagination";
 import ListGridFilter from "@/app/components/listing/ListGridFilter";
 import CarItems from "@/app/components/listing/listing-styles/listing-v1/CarItems";
-import Footer from "@/app/components/home-2/Footer";
+import Footer from "@/app/components/Footer";
 
 export const metadata = {
   title: "Our Cars || Niljyoti",
@@ -17,14 +16,14 @@ export const metadata = {
 const ListingV1 = () => {
   return (
     <div className="wrapper">
-      <div
+      {/* <div
         className="offcanvas offcanvas-end"
         tabIndex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
       >
         <HeaderSidebar />
-      </div>
+      </div> */}
       {/* Sidebar Panel End */}
 
       {/* Main Header Nav */}

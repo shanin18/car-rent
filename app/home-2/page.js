@@ -1,16 +1,15 @@
-import HeaderSidebar from "@/app/components/common/HeaderSidebar";
-
 import Link from "next/link";
-import Header from "../components/home-2/Header";
 import MobileMenu from "../components/common/MobileMenu";
 import Hero from "../components/home-2/Hero";
 import HeroFilter from "../components/common/HeroFilter";
 import WhyChoose from "../components/common/WhyChoose";
 import FeaturedFilterListing from "../components/home-1/FeaturedFilterListing";
 import CarType from "../components/home-2/CarType";
-import SaleBanner from "../components/home-2/SaleBanner";
-import Footer from "../components/home-2/Footer";
 import Testimonial from "../components/common/Testimonial";
+import DefaultHeader from "../components/common/DefaultHeader";
+import CarIntro from "../components/home-4/CarIntro";
+import Footer from "../components/Footer";
+
 
 export const metadata = {
   title: "Home || Niljyoti",
@@ -18,21 +17,10 @@ export const metadata = {
 };
 
 const Home_2 = () => {
-
   return (
     <div className="body_home2_style">
-      <div
-        className="offcanvas offcanvas-end"
-        tabIndex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <HeaderSidebar />
-      </div>
-      {/* Sidebar Panel End */}
-
       {/* Main Header Nav */}
-      <Header />
+      <DefaultHeader></DefaultHeader>
       {/* End Main Header Nav */}
 
       {/* Main Header Nav For Mobile */}
@@ -89,7 +77,7 @@ const Home_2 = () => {
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="main-title text-center">
-                <h2>Our Cars</h2>
+                <h2>Pick Your Desired Ones!</h2>
               </div>
             </div>
           </div>
@@ -144,13 +132,20 @@ const Home_2 = () => {
       {/* End Our Popular Listing */}
 
       {/* Sale Banner */}
-      <section className="home2_img_divider salesbanner">
+      {/* <section className="home2_img_divider salesbanner">
         <div className="container">
           <div className="row">
             <SaleBanner />
           </div>
         </div>
+      </section> */}
+
+      <section className="deliver-divider bg-img1">
+        <div className="container">
+          <CarIntro />
+        </div>
       </section>
+
       {/* End Sale Banner */}
 
       {/* Our Testimonials */}

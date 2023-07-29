@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 const MainMenu = () => {
   const path = usePathname();
-console.log(path)
+
   return (
     <>
       {menuItems.map((menuItem, index) => (
