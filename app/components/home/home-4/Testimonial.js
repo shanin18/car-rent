@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import Image from "next/image";
@@ -76,36 +75,48 @@ const Testimonial = () => {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <div className="testimonial_home4_slider">
-              <div className="tst_thumb_content d-flex mb30">
-                <div className="thumb me-4">
-                  <Image
-                    width={61}
-                    height={61}
-                    style={{
-                      objectFit: "cover",
-                      width: "100%",
-                      height: "100%",
-                    }}
-                    className="rounded-circle"
-                    src={testimonial.image}
-                    alt="testimonial image"
-                  />
+              <div className="row">
+                <div className="col-lg-1">
+                  <div className="tst_thumb_content">
+                    <div className="thumb text-start">
+                      <Image
+                        width={70}
+                        height={70}
+                        style={{ objectFit: "cover" }}
+                        className="rounded-circle"
+                        src={testimonial.image}
+                        alt="testimonial image"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div className="tst_client text-start pt0-lg">
-                  <h5 className="title my-1">{testimonial.name}</h5>
-                  <p className="para">{testimonial.designation}</p>
+                {/* End .col-1 */}
+
+                <div className="col-lg-2">
+                  <div className="tst_thumb_content">
+                    <div className="tst_client text-start pt0-lg">
+                      <h5 className="title my-1">{testimonial.name}</h5>
+                      <p className="para">{testimonial.designation}</p>
+                    </div>
+                  </div>
                 </div>
+                {/* End .col-2 */}
+
+                <div className="col-lg-9">
+                  <div className="tst_details text-start">
+                    <p className="para">{testimonial.content}</p>
+                  </div>
+                </div>
+                {/* End .col-9 */}
               </div>
-              <div className="tst_details text-start">
-                <p className="para">{testimonial.content}</p>
-              </div>
+              {/* End .row */}
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* Navigation */}
-      <div className="d-flex pt-5">
+      <div className="d-flex pt-5 number-pag-wrapper">
         <div
           className={`custom-prev-arrow pointer${
             currentSlide === 1 ? " disabled" : ""

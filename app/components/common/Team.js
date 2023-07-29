@@ -9,31 +9,31 @@ const teamMembers = [
     id: 1,
     name: "Dianne Russell",
     title: "Dog Trainer",
-    imageSrc: "/images/team/1.webp",
+    imageSrc: "/images/members/1.jpg",
   },
   {
     id: 2,
     name: "Devon Lane",
     title: "Nursing Assistant",
-    imageSrc: "/images/team/2.webp",
+    imageSrc: "/images/members/2.jpg",
   },
   {
     id: 3,
     name: "Ralph Edwards",
     title: "President of Sales",
-    imageSrc: "/images/team/3.webp",
+    imageSrc: "/images/members/3.jpg",
   },
   {
     id: 4,
     name: "Esther Howard",
     title: "Marketing Coordinator",
-    imageSrc: "/images/team/4.webp",
+    imageSrc: "/images/members/4.jpg",
   },
   {
     id: 5,
     name: "Dianne Russell",
     title: "Dog Trainer",
-    imageSrc: "/images/team/5.webp",
+    imageSrc: "/images/members/5.jpg",
   },
 ];
 
@@ -89,14 +89,6 @@ const Team = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="slider-arrow-center">
-        <button className="prev team-arrow-prev">
-          <i className="flaticon-left-arrow"></i>
-        </button>
-        <button className="next team-arrow-next">
-          <i className="flaticon-right-arrow"></i>
-        </button>
-      </div>
     </>
   );
 };

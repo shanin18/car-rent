@@ -31,8 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Body cz-shortcut-listen="false">
-        <div className="pb100">
-        </div>
+        <DefaultHeader />
         {children}
         <ScrollToTop />
       </Body>

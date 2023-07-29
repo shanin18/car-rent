@@ -231,6 +231,7 @@ h6 .small,
   color: #1a3760;
   font-weight: 400;
 }
+
 h1 a,
 h2 a,
 h3 a,
@@ -372,7 +373,7 @@ address {
   width: 100%;
   top: 0px;
   left: 0px;
-  z-index:1000;
+  z-index:1000
 }
 
 .shadow{
@@ -1457,6 +1458,12 @@ header.header-nav a.navbar_brand {
 .menu_style_home_one {
   background-color: #ffffff;
 }
+
+.negative_Z_index {
+  z-index: -1000;
+}
+
+
 header.header-nav a.navbar_brand .logo2 {
   display: none;
 }
@@ -4992,6 +4999,8 @@ form.listing_page_v9 {
   width: 89px;
   z-index: -1;
 }
+
+
 .home-four .banner-style-one .slide:before {
   left: 0;
   opacity: 0.902;
@@ -5024,7 +5033,7 @@ form.listing_page_v9 {
 }
 .home_content_home5_style .wrapper a.btn {
   border-radius: 8px;
-  color: #1a3760;
+  color: #ffffff;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -7385,7 +7394,7 @@ form.listing_page_v9 {
   letter-spacing: 0em;
 }
 .user_profile_location .location_btn {
-  background-color: #5f6973;
+  background-color: var(--primary-color);
   border-radius: 8px;
   bottom: 30px;
   color: #fff;
@@ -7406,8 +7415,7 @@ form.listing_page_v9 {
 .user_profile_location .location_btn:hover,
 .user_profile_location .location_btn:active,
 .user_profile_location .location_btn:focus {
-  background-color: #e6aa1b;
-  color: #1a3760;
+  background-color: #1a3760;
 }
 /*== Listing Single V5 Page Sticky Nav ==*/
 .sticky_heading {
@@ -8406,7 +8414,7 @@ form.listing_page_v9 {
   background-color: var(--primary-color);
   border-radius: 0 8px 8px 0;
   border: none;
-  color: #1a3760;
+  color: #ffffff;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -12764,12 +12772,13 @@ legend span {
 .mbp_pagination_comments .mbp_first .sspd_postdate .sspd_review ul li a,
 .sspd_review ul li a,
 .shop_item .details .review ul li a {
-  color: var(--primary-color);
+  color: #febe42;
   font-family: "FontAwesome";
   font-size: 11px;
   line-height: 12px;
   text-align: right;
 }
+
 .sspd_review ul li,
 .shop_item .details .review ul li {
   margin-right: 2px !important;
@@ -17973,6 +17982,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
 .curp {
   cursor: pointer;
 }
+ 
 /*== BackGround Images ==*/
 .bg-img1 {
   background-color: rgba(0, 0, 0, 0.7); 
@@ -18046,9 +18056,9 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
   background-blend-mode: multiply;
 }
 .bg-home1 {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
-  background-image: url(../images/home/banner3.jpg);
+  background-image: url(../images/home/WagonR.webp);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -18078,7 +18088,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
   height: 850px;
 }
 .bg-home5 {
-  background-image: url(../images/home/5.jpg);
+  background-image: url(../images/home/WagonR.webp);
   background-attachment: fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -20410,7 +20420,7 @@ ul.wishlist_compare li:last-child {
 .mbp_comment_form.style2 .comments_form button.btn,
 .bsp_reveiw_wrt .comments_form button.btn {
   border-radius: 8px;
-  color: #1a3760;
+  color: #ffffff;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;

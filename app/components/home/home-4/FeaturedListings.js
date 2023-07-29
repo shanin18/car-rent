@@ -1,24 +1,23 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
-
+import { Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
 import listingCar from "@/data/listingCar";
 import Image from "next/image";
 import Link from "next/link";
 
-const CarForSale = () => {
+const FeaturedListings = () => {
   return (
     <>
       <Swiper
         spaceBetween={20}
-        className="overflow-visible"
+        slidesPerView={3}
         speed={1000}
-        modules={[Pagination]}
-        pagination={{
-          el: ".car-for-sale-pag",
-          spaceBetween: 10,
-          clickable: true,
+        loop={true}
+        modules={[Navigation]}
+        navigation={{
+          nextEl: ".p5-arrow-next",
+          prevEl: ".p5-arrow-prev",
         }}
         breakpoints={{
           // breakpoints for responsive design
@@ -29,14 +28,14 @@ const CarForSale = () => {
             slidesPerView: 2,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
-          1068: {
-            slidesPerView: 4,
+          1024: {
+            slidesPerView: 3,
           },
         }}
       >
-        {listingCar.slice(0, 8).map((listing) => (
+        {listingCar.map((listing) => (
           <SwiperSlide key={listing.id}>
             <div className="item">
               <div className="car-listing">
@@ -53,6 +52,7 @@ const CarForSale = () => {
                   ) : undefined}
 
                   <Image
+                    src={listing.image}
                     width={284}
                     height={183}
                     style={{
@@ -61,9 +61,9 @@ const CarForSale = () => {
                       objectFit: "cover",
                     }}
                     priority
-                    src={listing.image}
-                    alt={listing.title}
+                    alt="car"
                   />
+
                   <div className="thmb_cntnt2">
                     <ul className="mb0">
                       <li className="list-inline-item">
@@ -97,47 +97,26 @@ const CarForSale = () => {
                 </div>
                 <div className="details">
                   <div className="wrapper">
-                    <h5 className="price">${listing.price}</h5>
                     <h6 className="title">
                       <Link href="/listing-single-v1">{listing.title}</Link>
                     </h6>
-                    <div className="listign_review">
-                      <ul className="mb0">
-                        {[...Array(5)].map((_, index) => (
-                          <li key={index} className="list-inline-item">
-                            <a href="#">
-                              <i className="fa fa-star" />
-                            </a>
-                          </li>
-                        ))}
-                        <li className="list-inline-item">
-                          <a href="#">{listing.rating}</a>
-                        </li>
-                        <li className="list-inline-item">
-                          ({listing.reviewsCount} reviews)
-                        </li>
-                      </ul>
-                    </div>
                   </div>{" "}
                   <div className="listing_footer">
-                    <ul className="mb0">
+                    <h5 className="price text-thm4 float-none float-sm-start">
+                      ${listing.price}
+                    </h5>
+                    <ul className="mb0 text-start text-sm-end">
                       <li className="list-inline-item">
-                        <a href="#">
-                          <span className="flaticon-road-perspective me-2" />
-                          {listing.mileage}
-                        </a>
+                        <span className="flaticon-road-perspective me-2" />
+                        {listing.mileage}
                       </li>
                       <li className="list-inline-item">
-                        <a href="#">
-                          <span className="flaticon-gas-station me-2" />
-                          {listing.fuelType}
-                        </a>
+                        <span className="flaticon-gas-station me-2" />
+                        {listing.fuelType}
                       </li>
                       <li className="list-inline-item">
-                        <a href="#">
-                          <span className="flaticon-gear me-2" />
-                          {listing.transmission}
-                        </a>
+                        <span className="flaticon-gear me-2" />
+                        {listing.transmission}
                       </li>
                     </ul>
                   </div>
@@ -147,11 +126,18 @@ const CarForSale = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="mt-3 text-center">
-        <div className="car-for-sale-pag" />
+      <div className="light-arrow_btn d-none d-sm-block">
+        <div className="slider-arrow-center">
+          <button className="prev p5-arrow-prev">
+            <i className="flaticon-left-arrow"></i>
+          </button>
+          <button className="next p5-arrow-next">
+            <i className="flaticon-right-arrow"></i>
+          </button>
+        </div>
       </div>
     </>
   );
 };
 
-export default CarForSale;
+export default FeaturedListings;

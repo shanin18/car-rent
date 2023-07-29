@@ -14,21 +14,9 @@ export const metadata = {
 };
 
 const ListingV1 = () => {
+  
   return (
     <div className="wrapper">
-      {/* <div
-        className="offcanvas offcanvas-end"
-        tabIndex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <HeaderSidebar />
-      </div> */}
-      {/* Sidebar Panel End */}
-
-      {/* Main Header Nav */}
-      <DefaultHeader />
-      {/* End Main Header Nav */}
 
       {/* Main Header Nav For Mobile */}
       <MobileMenu />
@@ -51,7 +39,7 @@ const ListingV1 = () => {
                 <h2 className="breadcrumb_title">Choose your favorite one!</h2>
                 <ol className="breadcrumb fn-sm mt15-sm">
                   <li className="breadcrumb-item">
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Our Cars

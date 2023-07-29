@@ -10,7 +10,6 @@ import DefaultHeader from "../components/common/DefaultHeader";
 import CarIntro from "../components/home-4/CarIntro";
 import Footer from "../components/Footer";
 
-
 export const metadata = {
   title: "Home || Niljyoti",
   description: `Niljyoti - Car rent service provider.`,
@@ -19,8 +18,6 @@ export const metadata = {
 const Home_2 = () => {
   return (
     <div className="body_home2_style">
-      {/* Main Header Nav */}
-      <DefaultHeader></DefaultHeader>
       {/* End Main Header Nav */}
 
       {/* Main Header Nav For Mobile */}
@@ -94,7 +91,7 @@ const Home_2 = () => {
             <div className="col-lg-12">
               <div className="text-center">
                 <Link href="/our-cars" className="more_listing">
-                  Show All Cars{" "}
+                  Show All Cars
                   <span className="icon">
                     <span className="fas fa-plus" />
                   </span>

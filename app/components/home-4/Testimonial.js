@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import Image from "next/image";

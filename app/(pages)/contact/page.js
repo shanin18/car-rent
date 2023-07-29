@@ -15,10 +15,6 @@ const Contact = () => {
   return (
     <div className="wrapper">
 
-      {/* Main Header Nav */}
-      <DefaultHeader />
-      {/* End Main Header Nav */}
-
       {/* Main Header Nav For Mobile */}
       <MobileMenu />
       {/* End Main Header Nav For Mobile */}

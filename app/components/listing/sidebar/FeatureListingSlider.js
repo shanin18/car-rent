@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Pagination]);

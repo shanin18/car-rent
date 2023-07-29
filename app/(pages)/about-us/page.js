@@ -1,5 +1,4 @@
 import DefaultHeader from "../../components/common/DefaultHeader";
-import HeaderSidebar from "../../components/common/HeaderSidebar";
 import MobileMenu from "../../components/common/MobileMenu";
 import AboutTextBlock from "@/app/components/pages/about-us/AboutTextBlock";
 import WhyChoose from "@/app/components/common/WhyChoose";
@@ -7,6 +6,8 @@ import Team from "@/app/components/common/Team";
 import Testimonial from "@/app/components/common/Testimonial";
 import LoginSignupModal from "@/app/components/common/login-signup";
 import Footer from "@/app/components/Footer";
+import Hero from "@/app/components/home-5/Hero";
+import Image from "next/image";
 
 export const metadata = {
   title: "About Us || Niljyoti",
@@ -16,45 +17,12 @@ export const metadata = {
 const AboutUs = () => {
   return (
     <div className="wrapper">
-      <div
-        className="offcanvas offcanvas-end"
-        tabIndex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <HeaderSidebar />
-      </div>
-      {/* Sidebar Panel End */}
-
-      {/* Main Header Nav */}
-      <DefaultHeader />
-      {/* End Main Header Nav */}
 
       {/* Main Header Nav For Mobile */}
       <MobileMenu />
       {/* End Main Header Nav For Mobile */}
 
-      {/* Inner Page Breadcrumb */}
-      <section className="inner_page_breadcrumb">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="breadcrumb_content">
-                <h2 className="breadcrumb_title">About Us</h2>
-                <ol className="breadcrumb">
-                  <li className="breadcrumb-item">
-                    <a href="#">Home</a>
-                  </li>
-                  <li className="breadcrumb-item active" aria-current="page">
-                    <a href="#">About Us</a>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Inner Page Breadcrumb */}
+      <Hero></Hero>
 
       {/* About Text Content */}
       <section className="about-section pb130">

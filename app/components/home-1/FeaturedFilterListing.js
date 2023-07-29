@@ -37,13 +37,13 @@ const FeaturedFilterListing = () => {
                   <ul className="mb0">
                     <li className="list-inline-item">
                       <a className="text-white" href="#">
-                        <span className="flaticon-photo-camera mr3" />{" "}
+                        <span className="flaticon-photo-camera mr3" />
                         {listing.photosCount}
                       </a>
                     </li>
                     <li className="list-inline-item">
                       <a className="text-white" href="#">
-                        <span className="flaticon-play-button mr3" />{" "}
+                        <span className="flaticon-play-button mr3" />
                         {listing.videosCount}
                       </a>
                     </li>
@@ -68,7 +68,7 @@ const FeaturedFilterListing = () => {
                 <div className="wrapper">
                   <h5 className="price">₹{listing.price}</h5>
                   <h6 className="title">
-                    <Link href="/listing-single-v1">{listing.title}</Link>
+                    <Link href={`/our-cars/${listing.id}`}>{listing.title}</Link>
                   </h6>
 
                   <div>

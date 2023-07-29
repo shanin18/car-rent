@@ -1,11 +1,15 @@
+"use client"
 import React from "react";
 import "@/public/css/footer.css";
 import Social from "./home-2/footer/Social";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 const Footer = () => {
+  const path = usePathname()
+
   return (
-    <footer>
-      <div className="footer-content container">
+    <footer className={path === "/our-cars" || path === "/about-us" || path === "/contact" ? "footer-bg" : ""}>
+      <div className={`footer-content container ${path === "/our-cars" || path === "/about-us" || path === "/contact" ? "" : "footer-bg radius"}`}>
       <Image
         width={120}
         height={45}
@@ -72,19 +76,19 @@ const Footer = () => {
           <div>
             <ul className="copyright-section">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               -
               <li>
-                <a href="#">Our Cars</a>
+                <a href="/our-cars">Our Cars</a>
               </li>
               -
               <li>
-                <a href="#">About Us</a>
+                <a href="/about-us">About Us</a>
               </li>
               -
               <li>
-                <a href="#">Contact Us</a>
+                <a href="/contact">Contact Us</a>
               </li>
             </ul>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/swiper-bundle.css";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";

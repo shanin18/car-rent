@@ -1,4 +1,4 @@
-
+"use client";
 import DefaultHeader from "@/app/components/common/DefaultHeader";
 import HeaderSidebar from "@/app/components/common/HeaderSidebar";
 import MobileMenu from "@/app/components/common/MobileMenu";
@@ -16,30 +16,23 @@ import ContactSeller from "@/app/components/listing/listing-single/sidebar/Conta
 import SellerDetail from "@/app/components/listing/listing-single/sidebar/SellerDetail";
 import Link from "next/link";
 import ReleatedCar from "@/app/components/listing/listing-single/ReleatedCar";
-import Footer from "@/app/components/home-2/Footer";
+import Footer from "@/app/components/Footer";
+import { useEffect, useState } from "react";
+import listingCar from "@/data/listingCar";
+import { usePathname } from "next/navigation";
 
 export const metadata = {
-  title:
-    "Details || Voiture - Automotive & Car Dealer NextJS Template",
+  title: "Details || Niljyoti",
+  description: `Niljyoti - Car rent service provider.`,
 };
 
-const ListingSingleV1 = () => {
+const ListingSingleV1 = ({ params }) => {
+  const id = params.id;
+  const path = usePathname();
+
+  const car = listingCar.find((car) => car.id == id);
   return (
     <div className="wrapper">
-      <div
-        className="offcanvas offcanvas-end"
-        tabIndex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <HeaderSidebar />
-      </div>
-      {/* Sidebar Panel End */}
-
-      {/* Main Header Nav */}
-      <DefaultHeader />
-      {/* End Main Header Nav */}
-
       {/* Main Header Nav For Mobile */}
       <MobileMenu />
       {/* End Main Header Nav For Mobile */}
@@ -48,38 +41,23 @@ const ListingSingleV1 = () => {
       <section className="our-agent-single bgc-f9 pb90 mt70-992 pt30">
         <div className="container">
           <div className="row mb30">
-            <div className="col-xl-12">
-              <div className="breadcrumb_content style2">
-                <BreadCrumb />
-              </div>
-            </div>
-          </div>
-          {/* End .row bradcrumb */}
-
-          <div className="row mb30">
             <div className="col-lg-7 col-xl-8">
               <div className="single_page_heading_content">
                 <div className="car_single_content_wrapper">
-                  <ul className="car_info mb20-md">
-                    <li className="list-inline-item">
-                      <a href="#">BRAND NEW - IN STOCK</a>
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                      <a href="/our-cars">Our Cars</a>
                     </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-clock-1 vam" />1 years ago
-                      </a>
+                    <li className="breadcrumb-item active" aria-current="page">
+                      Details
                     </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-eye vam" />
-                        13102
-                      </a>
-                    </li>
-                  </ul>
-                  <h2 className="title">Volvo XC 90</h2>
-                  <p className="para">
-                    2.0h T8 11.6kWh Polestar Engineered Auto AWD (s/s) 5dr
-                  </p>
+                  </ol>
+                  <div className="pt25">
+                    <h2 className="title flex-end">{car.title}</h2>
+                    <p className="para">
+                      2.0h T8 11.6kWh Polestar Engineered Auto AWD (s/s) 5dr
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -92,12 +70,7 @@ const ListingSingleV1 = () => {
                 </div>
                 <div className="price_content">
                   <div className="price mt60 mb10 mt10-md">
-                    <h3>
-                      <small className="mr15">
-                        <del>$92,480</del>
-                      </small>
-                      $89,480
-                    </h3>
+                    <h3>₹{car.price}</h3>
                   </div>
                 </div>
               </div>
@@ -108,13 +81,13 @@ const ListingSingleV1 = () => {
 
           <div className="row">
             <div className="col-lg-8 col-xl-8">
-              <ProductGallery />
+              <ProductGallery slides={car.slide} />
               {/* End Car Gallery */}
 
               <div className="opening_hour_widgets p30 mt30">
                 <div className="wrapper">
                   <h4 className="title">Overview</h4>
-                  <Overview />
+                  <Overview carData={car} />
                 </div>
               </div>
               {/* End opening_hour_widgets */}
@@ -167,23 +140,9 @@ const ListingSingleV1 = () => {
             {/* End .col-xl-8 */}
 
             <div className="col-lg-4 col-xl-4">
-              <div className="offer_btns">
-                <div className="text-end">
-                  <button className="btn btn-thm ofr_btn1 btn-block mt0 mb20">
-                    <span className="flaticon-coin mr10 fz18 vam" />
-                    Make an Offer Price
-                  </button>
-                  <button className="btn ofr_btn2 btn-block mt0 mb20">
-                    <span className="flaticon-profit-report mr10 fz18 vam" />
-                    View VIN Report
-                  </button>
-                </div>
-              </div>
-              {/* End offer_btn
-               */}
               <div className="sidebar_seller_contact">
                 <SellerDetail />
-                <h4 className="mb30">Contact Seller</h4>
+                <h4 className="mb30">Contact For Rent</h4>
                 <ContactSeller />
               </div>
 
@@ -197,7 +156,7 @@ const ListingSingleV1 = () => {
       {/* End Agent Single Grid View */}
 
       {/* Car For Rent */}
-      <section className="car-for-rent bb1">
+      <section className="car-for-rent">
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
@@ -209,7 +168,7 @@ const ListingSingleV1 = () => {
 
             <div className="col-sm-6">
               <div className="text-center text-md-end mb30-520">
-                <Link href="/page-list-v1" className="more_listing">
+                <Link href="/our-cars" className="more_listing">
                   Show All Cars
                   <span className="icon">
                     <span className="fas fa-plus" />

@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/swiper-bundle.css";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
@@ -9,30 +10,30 @@ import "react-modal-video/scss/modal-video.scss";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import Image from "next/image";
 
-const slides = [
-  {
-    imageSrc: "/images/listing/lsp1-v1.jpg",
-    videoId: "VWrJkx6O0L8",
-  },
-  {
-    imageSrc: "/images/listing/lsp1-v2.jpg",
-    videoId: "TLEyLGWvjII",
-  },
-  {
-    imageSrc: "/images/listing/lsp1-v3.jpg",
-    videoId: "BS2jGGYC60c",
-  },
-  {
-    imageSrc: "/images/listing/lsp1-v4.jpg",
-    videoId: "8PiZNUCexrA",
-  },
-  {
-    imageSrc: "/images/listing/lsp1-v5.jpg",
-    videoId: "m4ZGuAbUMg8",
-  },
-];
+// const slides = [
+//   {
+//     imageSrc: "/images/listing/lsp1-v1.jpg",
+//     videoId: "VWrJkx6O0L8",
+//   },
+//   {
+//     imageSrc: "/images/listing/lsp1-v2.jpg",
+//     videoId: "TLEyLGWvjII",
+//   },
+//   {
+//     imageSrc: "/images/listing/lsp1-v3.jpg",
+//     videoId: "BS2jGGYC60c",
+//   },
+//   {
+//     imageSrc: "/images/listing/lsp1-v4.jpg",
+//     videoId: "8PiZNUCexrA",
+//   },
+//   {
+//     imageSrc: "/images/listing/lsp1-v5.jpg",
+//     videoId: "m4ZGuAbUMg8",
+//   },
+// ];
 
-export default function ProductGallery() {
+export default function ProductGallery({slides}) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [isOpen, setOpen] = useState(false);
   const [videoId, setVideoId] = useState("");
@@ -66,8 +67,8 @@ export default function ProductGallery() {
                     priority
                     style={{ objectFit: "cover" }}
                     className="w-100 h-100"
-                    src={slide.imageSrc}
-                    alt="large car"
+                    src={slide}
+                    alt="car image"
                   />
 
                   <div className="overlay_icon">
@@ -100,7 +101,7 @@ export default function ProductGallery() {
                   height={106}
                   priority
                   style={{ objectFit: "cover" }}
-                  src={slide.imageSrc}
+                  src={slide}
                   alt="thum car"
                 />
               </SwiperSlide>

@@ -1,6 +1,12 @@
+  .radius{
+    border-radius: 20px;
+  }
+  
   .footer-content {
     padding: 50px 25px 25px 20px;
-    border-radius: 20px;
+  }
+
+  .footer-bg{
     background-color: #eef2f6;
   }
 
@@ -23,10 +29,9 @@
   .footer-section li {
     list-style: none;
   }
-  
-  .footer-section a:hover {
-    /* color: #ffffff; */
-    color: #09adf2;
+
+  .copyright-section li a:hover {
+    color: var(--primary-color);
   }
   
   .copyright {

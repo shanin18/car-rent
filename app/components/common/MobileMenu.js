@@ -6,14 +6,14 @@ import { useEffect, useState } from "react";
 import { ProSidebarProvider, Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 
 const MobileMenu = () => {
-  const [shadow, setShadow] = useState(false);
+  const [fixed, setFixed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 71) {
-        setShadow(true);
+        setFixed(true);
       } else {
-        setShadow(false);
+        setFixed(false);
       }
     };
 
@@ -41,8 +41,8 @@ const MobileMenu = () => {
 
   return (
     <>
-      <div className="stylehome1 h0 fixed">
-        <div className={`mobile-menu ${shadow && "shadow"}`}>
+      <div className="stylehome1 h0">
+        <div className={`mobile-menu ${fixed && "shadow fixed"}`}>
           <div className="header stylehome1">
             <div className="mobile_menu_bar">
               <a
@@ -106,7 +106,7 @@ const MobileMenu = () => {
           <ProSidebarProvider>
             <Sidebar
               width="100%"
-              backgroundColor="#0A2357"
+              backgroundColor="#09adf2"
               className="my-custom-class"
             >
               <Menu>

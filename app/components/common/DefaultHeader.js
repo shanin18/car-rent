@@ -5,14 +5,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const DefaultHeader = () => {
-  const [shadow, setShadow] = useState(false);
+  const [fixed, setFixed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 102) {
-        setShadow(true);
+        setFixed(true);
       } else {
-        setShadow(false);
+        setFixed(false);
       }
     };
 
@@ -23,7 +23,7 @@ const DefaultHeader = () => {
 
   return (
     <header
-      className={`header-nav menu_style_home_one home3_style main-menu fixed ${shadow && "shadow"}`}
+      className={`header-nav menu_style_home_one home3_style main-menu ${fixed && "fixed  shadow"}`}
     >
       {/* Ace Responsive Menu */}
       <nav>

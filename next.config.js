@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["i.ibb.co"], // Add your allowed domains for images here
+    domains: ["i.ibb.co", "swiperjs.com","advertising.expedia.com"], // Add your allowed domains for images here
   },
 };
 

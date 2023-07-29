@@ -2,6 +2,7 @@ module.exports = [
   {
     id: 1,
     image: "https://i.ibb.co/QprWZRv/wagnar-Resize.png",
+    slide: ["https://i.ibb.co/QprWZRv/wagnar-Resize.png"],
     photosCount: 22,
     videosCount: 3,
     title: "Waygonr",
@@ -16,8 +17,11 @@ module.exports = [
   },
   {
     id: 2,
-    image:
+    image: "https://i.ibb.co/M7VXDGk/dzire-Resize.png",
+    slide: [
       "https://i.ibb.co/M7VXDGk/dzire-Resize.png",
+      "https://i.ibb.co/QprWZRv/wagnar-Resize.png",
+    ],
     photosCount: 33,
     videosCount: 4,
     title: "Dzire",
@@ -33,6 +37,10 @@ module.exports = [
   {
     id: 3,
     image: "https://i.ibb.co/KjsRqHk/image-285x185.png",
+    slide: [
+      "https://i.ibb.co/KjsRqHk/image-285x185.png",
+      "https://i.ibb.co/M7VXDGk/dzire-Resize.png",
+    ],
     photosCount: 55,
     videosCount: 3,
     title: "Scorpio",
@@ -48,6 +56,10 @@ module.exports = [
   {
     id: 4,
     image: "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    slide: [
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+      "https://i.ibb.co/KjsRqHk/image-285x185.png",
+    ],
     photosCount: 12,
     videosCount: 3,
     title: "Ertiga",
@@ -61,8 +73,12 @@ module.exports = [
     tags: ["new", "used"],
   },
   {
-    id: 4,
+    id: 8,
     image: "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    slide: [
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    ],
     photosCount: 12,
     videosCount: 3,
     title: "Ertiga",
@@ -76,8 +92,12 @@ module.exports = [
     tags: ["new", "used"],
   },
   {
-    id: 4,
+    id: 7,
     image: "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    slide: [
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    ],
     photosCount: 12,
     videosCount: 3,
     title: "Ertiga",
@@ -91,8 +111,12 @@ module.exports = [
     tags: ["new", "used"],
   },
   {
-    id: 4,
+    id: 6,
     image: "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    slide: [
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    ],
     photosCount: 12,
     videosCount: 3,
     title: "Ertiga",
@@ -108,6 +132,10 @@ module.exports = [
   {
     id: 5,
     image: "https://i.ibb.co/ydxPvkM/image-285x185.png",
+    slide: [
+      "https://i.ibb.co/ydxPvkM/image-285x185.png",
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    ],
     photosCount: 22,
     videosCount: 3,
     title: "Innova",
@@ -121,8 +149,12 @@ module.exports = [
     tags: ["used"],
   },
   {
-    id: 5,
+    id: 9,
     image: "https://i.ibb.co/ydxPvkM/image-285x185.png",
+    slide: [
+      "https://i.ibb.co/ydxPvkM/image-285x185.png",
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    ],
     photosCount: 22,
     videosCount: 3,
     title: "Innova",
@@ -136,8 +168,12 @@ module.exports = [
     tags: ["used"],
   },
   {
-    id: 5,
+    id: 10,
     image: "https://i.ibb.co/ydxPvkM/image-285x185.png",
+    slide: [
+      "https://i.ibb.co/ydxPvkM/image-285x185.png",
+      "https://i.ibb.co/hfP6t1g/ertiga-Resize.png",
+    ],
     photosCount: 22,
     videosCount: 3,
     title: "Innova",

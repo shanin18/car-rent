@@ -2,10 +2,10 @@ const BreadCrumb = () => {
   return (
     <ol className="breadcrumb float-start">
       <li className="breadcrumb-item">
-        <a href="#">Home</a>
+        <a href="#">Our Cars</a>
       </li>
       <li className="breadcrumb-item active" aria-current="page">
-        Cars for Sale
+        Details
       </li>
     </ol>
   );
