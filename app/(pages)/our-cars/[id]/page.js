@@ -17,10 +17,10 @@ import Footer from "@/app/components/Footer";
 import listingCar from "@/data/listingCar";
 import { usePathname } from "next/navigation";
 
-export const metadata = {
-  title: "Details || Niljyoti",
-  description: `Niljyoti - Car rent service provider.`,
-};
+// export const metadata = {
+//   title: "Details || Niljyoti",
+//   description: `Niljyoti - Car rent service provider.`,
+// };
 
 const ListingSingleV1 = ({ params }) => {
   const id = params.id;
