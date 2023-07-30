@@ -3,7 +3,7 @@ import Image from "next/image";
 const commentsData = [
   {
     id: 1,
-    // image: "/images/blog/reviewer1.png",
+    image: "/images/blog/reviewer1.png",
     name: "Jane Cooper",
     date: "April 6, 2021 at 3:21 AM",
     reviewCount: 5,
@@ -13,7 +13,7 @@ const commentsData = [
   },
   {
     id: 2,
-    // image: "/images/blog/reviewer2.png",
+    image: "/images/blog/reviewer2.png",
     name: "John Doe",
     date: "May 10, 2023 at 10:00 AM",
     reviewCount: 5,

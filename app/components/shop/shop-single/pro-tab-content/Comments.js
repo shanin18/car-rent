@@ -6,7 +6,7 @@ const Comments = () => {
     {
       id: 1,
       reviewer: "Bessie Cooper",
-      // imageSrc: "/images/blog/reviewer1.png",
+      imageSrc: "/images/blog/reviewer1.png",
       date: "April 6, 2021 at 3:21 AM",
       rating: 5,
       review:
@@ -15,7 +15,7 @@ const Comments = () => {
     {
       id: 2,
       reviewer: "Savannah Nguyen",
-      // imageSrc: "/images/blog/reviewer2.png",
+      imageSrc: "/images/blog/reviewer2.png",
       date: "April 6, 2021 at 3:21 AM",
       rating: 5,
       review:
