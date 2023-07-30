@@ -10,7 +10,7 @@ const MainMenu = () => {
       {menuItems.map((menuItem, index) => (
         <li className="dropitem" key={index}>
           <a
-            className={menuItem.path === path && "active"}
+            className={menuItem.path === path ? "active" : ""}
             href={menuItem.path}
           >
             <span className="title">{menuItem.label}</span>

@@ -42,7 +42,7 @@ const MobileMenu = () => {
   return (
     <>
       <div className="stylehome1 h0">
-        <div className={`mobile-menu ${fixed && "shadow fixed"}`}>
+        <div className={`mobile-menu ${fixed ? "shadow fixed" : undefined}`}>
           <div className="header stylehome1">
             <div className="mobile_menu_bar">
               <a

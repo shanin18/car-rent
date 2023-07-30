@@ -23,7 +23,7 @@ const DefaultHeader = () => {
 
   return (
     <header
-      className={`header-nav menu_style_home_one home3_style main-menu ${fixed && "fixed  shadow"}`}
+      className={`header-nav menu_style_home_one home3_style main-menu ${fixed ? "fixed shadow": undefined}`}
     >
       {/* Ace Responsive Menu */}
       <nav>
