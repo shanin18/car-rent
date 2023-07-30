@@ -33,11 +33,11 @@ const Header = () => {
             data-menu-style="horizontal"
           >
             <MainMenu />
-            {user && (
+            {user ? (
               <li className="add_listing">
                 <Link href="/add-listings">+ Add Listing</Link>
               </li>
-            )}
+            ): undefined}
 
             <li
               className="sidebar_panel"

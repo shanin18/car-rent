@@ -29,7 +29,7 @@ export default function ScrollToTop() {
 
   return (
     <>
-      {isVisible && (
+      {isVisible ? (
         <>
           <div
             className="scrollToHome"
@@ -39,7 +39,7 @@ export default function ScrollToTop() {
             <i className="fas fa-arrow-up"></i>
           </div>
         </>
-      )}
+      ): undefined}
     </>
   );
 }
