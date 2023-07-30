@@ -17,7 +17,6 @@ import SellerDetail from "@/app/components/listing/listing-single/sidebar/Seller
 import Link from "next/link";
 import ReleatedCar from "@/app/components/listing/listing-single/ReleatedCar";
 import Footer from "@/app/components/Footer";
-import { useEffect, useState } from "react";
 import listingCar from "@/data/listingCar";
 import { usePathname } from "next/navigation";
 
@@ -26,7 +25,7 @@ export const metadata = {
   description: `Niljyoti - Car rent service provider.`,
 };
 
-const Details = ({ params }) => {
+const ListingSingleV1 = ({ params }) => {
   const id = params.id;
   const path = usePathname();
 
@@ -217,4 +216,4 @@ const Details = ({ params }) => {
   );
 };
 
-export default Details;
+export default ListingSingleV1;
