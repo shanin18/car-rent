@@ -29,6 +29,7 @@ const ListingSingleV1 = ({ params }) => {
   const car = listingCar.find((car) => car.id == id);
   return (
     <div className="wrapper">
+      
       {/* Main Header Nav For Mobile */}
       <MobileMenu />
       {/* End Main Header Nav For Mobile */}
