@@ -1,4 +1,3 @@
-import DefaultHeader from "../../components/common/DefaultHeader";
 import MobileMenu from "../../components/common/MobileMenu";
 import AboutTextBlock from "@/app/components/pages/about-us/AboutTextBlock";
 import WhyChoose from "@/app/components/common/WhyChoose";
@@ -7,7 +6,7 @@ import Testimonial from "@/app/components/common/Testimonial";
 import LoginSignupModal from "@/app/components/common/login-signup";
 import Footer from "@/app/components/Footer";
 import Hero from "@/app/components/home-5/Hero";
-import Image from "next/image";
+
 
 export const metadata = {
   title: "About Us || Niljyoti",

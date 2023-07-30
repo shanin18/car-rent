@@ -1,4 +1,4 @@
-import Home_2 from "./home-2/page";
+import Home from "./home-2/page";
 import Wrapper from "./layout/wrapper";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 export default function MainRoot() {
   return (
     <Wrapper>
-      <Home_2 />
+      <Home />
     </Wrapper>
   );
 }

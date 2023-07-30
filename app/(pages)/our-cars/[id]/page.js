@@ -26,7 +26,7 @@ export const metadata = {
   description: `Niljyoti - Car rent service provider.`,
 };
 
-const ListingSingleV1 = ({ params }) => {
+const Details = ({ params }) => {
   const id = params.id;
   const path = usePathname();
 
@@ -217,4 +217,4 @@ const ListingSingleV1 = ({ params }) => {
   );
 };
 
-export default ListingSingleV1;
+export default Details;

@@ -6,7 +6,6 @@ import WhyChoose from "../components/common/WhyChoose";
 import FeaturedFilterListing from "../components/home-1/FeaturedFilterListing";
 import CarType from "../components/home-2/CarType";
 import Testimonial from "../components/common/Testimonial";
-import DefaultHeader from "../components/common/DefaultHeader";
 import CarIntro from "../components/home-4/CarIntro";
 import Footer from "../components/Footer";
 
@@ -15,7 +14,7 @@ export const metadata = {
   description: `Niljyoti - Car rent service provider.`,
 };
 
-const Home_2 = () => {
+const Home = () => {
   return (
     <div className="body_home2_style">
       {/* End Main Header Nav */}
@@ -124,26 +123,12 @@ const Home_2 = () => {
       </section>
       {/* End Our CarType  */}
 
-      {/* Our Popular Listing */}
-      {/*  */}
-      {/* End Our Popular Listing */}
-
-      {/* Sale Banner */}
-      {/* <section className="home2_img_divider salesbanner">
-        <div className="container">
-          <div className="row">
-            <SaleBanner />
-          </div>
-        </div>
-      </section> */}
-
       <section className="deliver-divider bg-img1">
         <div className="container">
           <CarIntro />
         </div>
       </section>
 
-      {/* End Sale Banner */}
 
       {/* Our Testimonials */}
       <section className="our-testimonial">
@@ -176,4 +161,4 @@ const Home_2 = () => {
   );
 };
 
-export default Home_2;
+export default Home;
