@@ -6,7 +6,7 @@ const Comments = () => {
     {
       id: 1,
       reviewer: "Bessie Cooper",
-      imageSrc: "/images/blog/reviewer1.png",
+      // imageSrc: "/images/blog/reviewer1.png",
       date: "April 6, 2021 at 3:21 AM",
       rating: 5,
       review:
@@ -15,7 +15,7 @@ const Comments = () => {
     {
       id: 2,
       reviewer: "Savannah Nguyen",
-      imageSrc: "/images/blog/reviewer2.png",
+      // imageSrc: "/images/blog/reviewer2.png",
       date: "April 6, 2021 at 3:21 AM",
       rating: 5,
       review:
@@ -24,7 +24,7 @@ const Comments = () => {
     {
       id: 3,
       reviewer: "Albert Flores",
-      imageSrc: "/images/blog/reviewer3.png",
+      // imageSrc: "/images/blog/reviewer3.png",
       date: "April 6, 2021 at 3:21 AM",
       rating: 5,
       review:
@@ -38,13 +38,13 @@ const Comments = () => {
         <div className="single-comment" key={comment.id}>
           <div className="mbp_first d-flex align-items-center">
             <div className="flex-shrink-0">
-              <Image
+              {/* <Image
                 width={70}
                 height={70}
                 src={comment.imageSrc}
                 className="mr-3"
                 alt={`reviewer${comment.id}.png`}
-              />
+              /> */}
             </div>
             <div className="flex-grow-1 ms-4">
               <h4 className="sub_title mt20">{comment.reviewer}</h4>

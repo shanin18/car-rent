@@ -3,7 +3,7 @@ import Image from "next/image";
 const commentsData = [
   {
     id: 1,
-    image: "/images/blog/reviewer1.png",
+    // image: "/images/blog/reviewer1.png",
     name: "Jane Cooper",
     date: "April 6, 2021 at 3:21 AM",
     reviewCount: 5,
@@ -13,7 +13,7 @@ const commentsData = [
   },
   {
     id: 2,
-    image: "/images/blog/reviewer2.png",
+    // image: "/images/blog/reviewer2.png",
     name: "John Doe",
     date: "May 10, 2023 at 10:00 AM",
     reviewCount: 5,
@@ -48,13 +48,13 @@ const Comments = () => {
       {commentsData.map((comment) => (
         <div key={comment.id} className="mbp_first d-flex">
           <div className="flex-shrink-0">
-            <Image
+            {/* <Image
               width={70}
               height={70}
               src={comment.image}
               className="mr-3"
               alt="reviewer"
-            />
+            /> */}
           </div>
           <div className="flex-grow-1 ms-4">
             <h4 className="sub_title">{comment.name}</h4>
